@@ -24,7 +24,7 @@ export async function middleware(request) {
           })
 
           cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options)
+            supabaseResponse.cookies.set(name, value, options)  
           )
         },
       },
@@ -43,12 +43,12 @@ export async function middleware(request) {
   // User logged in -> /dashboard 
   
   if (currentPath === '/') {
-    if (!user) {
+    //if (!user) {
       return NextResponse.redirect(new URL('/login', request.url))
-    } else {
-      return NextResponse.redirect(new URL('/dashboard', request.url))
+    //} else {
+      //return NextResponse.redirect(new URL('/dashboard', request.url))
     }
-  }
+  //}
 // 2 if user tries to access protected routes without login, redirect to /login
 
 
