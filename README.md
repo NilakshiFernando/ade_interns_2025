@@ -35,7 +35,6 @@ The system demonstrates how **AI + Image Processing** can automate **data extrac
 
 ![Demo GIF](demo.gif)
 
-*(Add a screen recording GIF of your project here)*
 
 ---
 
