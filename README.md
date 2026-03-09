@@ -33,7 +33,7 @@ The system demonstrates how **AI + Image Processing** can automate **data extrac
 
 ### OCR Processing Demo
 
-![Demo GIF](screenshots/demo.gif)
+![Demo GIF](demo.gif)
 
 *(Add a screen recording GIF of your project here)*
 
@@ -43,15 +43,15 @@ The system demonstrates how **AI + Image Processing** can automate **data extrac
 
 ## ☀ Light Mode
 
-<img width="900" src="screenshots/light-mode.png">
+<img width="900" src="light-mode.png">
 
 ## 🌙 Dark Mode
 
-<img width="900" src="screenshots/dark-mode.png">
+<img width="900" src="dark-mode.png">
 
 ## 🔍 OCR Result
 
-<img width="900" src="screenshots/ocr-result.png">
+<img width="900" src="ocr-result.png">
 
 ---
 
