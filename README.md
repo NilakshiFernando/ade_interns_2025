@@ -1,139 +1,217 @@
-🌐 Project Overview
+# 📄 AI OCR Text Recognition System
 
-This project is an Optical Character Recognition (OCR) system that extracts text from images and converts it into machine-readable text.
+![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Gemini-AI-blue)
+![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel)
 
-Users can upload images containing printed or handwritten text, and the application processes the image using AI-powered OCR to detect and display the extracted text.
+AI-powered **Optical Character Recognition (OCR)** web application that extracts text from images using **Gemini AI**, built with **Next.js, Supabase, and Tailwind CSS**.
 
-The goal of this project is to demonstrate how image processing and AI-based text recognition technologies can automate data extraction from images, scanned documents, and photos.
+---
 
-The system also supports:
+# 🌐 Project Overview
 
-🌙 Dark Mode / Light Mode UI
-🌏 English & Japanese language support
+This project is an **Optical Character Recognition (OCR) system** that extracts text from images and converts it into **machine-readable text**.
 
-🖼️ Screenshots
-Light Mode
-<img width="900" alt="Light Mode UI" src="screenshots/light-mode.png">
-Dark Mode
-<img width="900" alt="Dark Mode UI" src="screenshots/dark-mode.png">
-OCR Result
-<img width="900" alt="OCR Result" src="screenshots/ocr-result.png">
+Users can upload images containing **printed or handwritten text**, and the system processes the image using **AI-powered OCR** to detect and display the extracted text.
 
-(Add your screenshots inside a screenshots folder)
+The system demonstrates how **AI + Image Processing** can automate **data extraction from images, scanned documents, and photos**.
 
-🇯🇵 日本語説明 (Japanese Description)
+### 🌟 Key Highlights
 
-このプロジェクトは、画像からテキストを抽出するOCR（光学文字認識）システムです。
+- 🌙 Dark Mode / Light Mode UI
+- 🌏 English & Japanese language support
+- 🧠 AI-powered OCR with Gemini Flash 2.5
+- ☁ Cloud storage with Supabase
+- 🎨 Canvas editor for image editing
 
-ユーザーはテキストを含む画像をアップロードすると、アプリケーションがAIを使用して画像を処理し、機械が読み取れるテキストデータに変換します。
+---
 
-このシステムは、画像処理技術とAIによる文字認識を活用して、スキャンされた文書や画像からのデータ抽出を自動化することを目的としています。
+# 🎥 Demo
 
-主な特徴：
+### OCR Processing Demo
 
-ダークモード / ライトモード対応
+![Demo GIF](screenshots/demo.gif)
 
-英語 / 日本語の多言語対応
+*(Add a screen recording GIF of your project here)*
 
-AIによる高精度OCR処理
+---
 
-シンプルで使いやすいインターフェース
+# 🖼️ Screenshots
 
---------------------------------------------------------------------------------------------------------------
+## ☀ Light Mode
 
-✨ Features
+<img width="900" src="screenshots/light-mode.png">
 
-✔ Upload images containing text
-✔ AI-powered OCR text extraction
-✔ Support for printed and handwritten text
-✔ Canvas-based image editing using Fabric.js
-✔ Dark Mode / Light Mode UI
-✔ English / Japanese language switching
-✔ Cloud storage for uploaded files
-✔ Secure authentication with Supabase
+## 🌙 Dark Mode
 
---------------------------------------------------------------------------------------------------------------
+<img width="900" src="screenshots/dark-mode.png">
 
-🧠 Tech Stack
-Frontend
+## 🔍 OCR Result
 
-React / Next.js – UI framework
-Tailwind CSS – Styling
-Fabric.js – Canvas editor
+<img width="900" src="screenshots/ocr-result.png">
 
-Backend
+---
 
-Next.js API Routes (or Node.js / Express)
-Supabase
-Database
-Authentication
-Storage
+# 🧠 System Architecture
 
-AI Processing
-Gemini AI Flash 2.5 – OCR processing
+```
+User Upload Image
+        │
+        ▼
+Next.js Frontend (React UI)
+        │
+        ▼
+Canvas Editing (Fabric.js)
+        │
+        ▼
+Next.js API Route
+        │
+        ▼
+Gemini AI Flash 2.5
+        │
+        ▼
+Extracted Text Response
+        │
+        ▼
+Display Result in UI
+```
 
-Deployment
+---
 
-Vercel – Hosting
-Supabase – Backend services
+# 🇯🇵 日本語説明 (Japanese Description)
 
-Localization
-i18next – English / Japanese translation
+このプロジェクトは、**画像からテキストを抽出するOCR（光学文字認識）システム**です。
 
---------------------------------------------------------------------------------------------------------------
+ユーザーがテキストを含む画像をアップロードすると、AIを使用して画像を処理し、**機械が読み取れるテキストデータ**に変換します。
 
-⚙️ Installation
-1️⃣ Clone the Repository
+このシステムは、**画像処理技術とAIによる文字認識**を活用して、スキャンされた文書や写真からのデータ抽出を自動化することを目的としています。
+
+### 主な機能
+
+- ダークモード / ライトモード対応  
+- 英語 / 日本語の多言語対応  
+- AIによるOCR処理  
+- シンプルで使いやすいUI  
+
+---
+
+# ✨ Features
+
+- Upload images containing text
+- AI-powered OCR text extraction
+- Support for printed and handwritten text
+- Canvas-based editing with Fabric.js
+- Dark / Light theme
+- English / Japanese translation
+- Secure authentication
+- Cloud storage
+
+---
+
+# 🧰 Tech Stack
+
+## Frontend
+
+- **React / Next.js**
+- **Tailwind CSS**
+- **Fabric.js**
+
+## Backend
+
+- **Next.js API Routes**
+- **Supabase**
+  - Database
+  - Authentication
+  - Storage
+
+## AI Processing
+
+- **Gemini AI Flash 2.5**
+
+## Localization
+
+- **i18next** (English / Japanese)
+
+## Deployment
+
+- **Vercel**
+- **Supabase**
+
+---
+
+# ⚙️ Installation
+
+## 1 Clone Repository
+
+```bash
 git clone https://github.com/yourusername/ocr-ai-project.git
-
 cd ocr-ai-project
-2️⃣ Install Dependencies
+```
+
+---
+
+## 2 Install Dependencies
+
+```bash
 npm install
+```
 
 or
 
+```bash
 yarn install
-3️⃣ Configure Environment Variables
+```
 
-Create a .env.local file.
+---
 
+## 3 Setup Environment Variables
+
+Create `.env.local`
+
+```
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
 GEMINI_API_KEY=your_gemini_api_key
-4️⃣ Run the Development Server
+```
+
+---
+
+## 4 Run Development Server
+
+```bash
 npm run dev
+```
 
-Open in browser:
+Open:
 
+```
 http://localhost:3000
-🚀 Deployment
+```
 
-The project is deployed using:
+---
 
-Vercel – Frontend hosting
+# 🚀 Deployment
 
-Supabase – Backend services
+The application is deployed using:
 
-Deploy with:
+- **Vercel** – frontend hosting
+- **Supabase** – backend services
 
+Deploy using:
+
+```bash
 vercel deploy
-🧪 Demo
+```
 
-Live Demo:
-(https://ocrproject3.vercel.app/)
+---
 
-Example Workflow:
+# 📁 Project Structure
 
-1️⃣ Upload image
-2️⃣ Edit or crop using canvas editor
-3️⃣ Click Extract Text
-4️⃣ AI processes image using Gemini
-5️⃣ OCR result appears instantly
-
---------------------------------------------------------------------------------------------------------------
-
-📁 Project Structure
-/ocr-project
+```
+ocr-project
 │
 ├── components
 ├── pages
@@ -147,24 +225,33 @@ Example Workflow:
 ├── supabase
 │
 └── README.md
+```
 
---------------------------------------------------------------------------------------------------------------
+---
 
-🔮 Future Improvements
+# 🔮 Future Improvements
 
-Multi-language OCR support
+- Multi-language OCR
+- PDF document scanning
+- Better handwriting recognition
+- Export as PDF / TXT
+- Batch image processing
 
-PDF document OCR
+---
 
-Handwriting accuracy improvements
+# 👩‍💻 Author
 
-Export results as PDF / TXT
+**Nilakshi Fernando**
 
-Batch image processing
---------------------------------------------------------------------------------------------------------------
-👩‍💻 Author
+Software Engineering Graduate  
+Interested in **AI, Web Development, and Automation**
 
-Nilakshi Fernando
+---
 
-Software Engineering Graduate
-Passionate about AI, Web Development, and Automation
+# ⭐ Support
+
+If you like this project:
+
+⭐ Star the repository  
+🍴 Fork the project  
+🚀 Share with others
