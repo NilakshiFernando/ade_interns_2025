@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🌐 Project Overview
 
-## Getting Started
+This project is an Optical Character Recognition (OCR) system that extracts text from images and converts it into machine-readable text.
 
-First, run the development server:
+Users can upload images containing printed or handwritten text, and the application processes the image using AI-powered OCR to detect and display the extracted text.
 
-```bash
+The goal of this project is to demonstrate how image processing and AI-based text recognition technologies can automate data extraction from images, scanned documents, and photos.
+
+The system also supports:
+
+🌙 Dark Mode / Light Mode UI
+🌏 English & Japanese language support
+
+🖼️ Screenshots
+Light Mode
+<img width="900" alt="Light Mode UI" src="screenshots/light-mode.png">
+Dark Mode
+<img width="900" alt="Dark Mode UI" src="screenshots/dark-mode.png">
+OCR Result
+<img width="900" alt="OCR Result" src="screenshots/ocr-result.png">
+
+(Add your screenshots inside a screenshots folder)
+
+🇯🇵 日本語説明 (Japanese Description)
+
+このプロジェクトは、画像からテキストを抽出するOCR（光学文字認識）システムです。
+
+ユーザーはテキストを含む画像をアップロードすると、アプリケーションがAIを使用して画像を処理し、機械が読み取れるテキストデータに変換します。
+
+このシステムは、画像処理技術とAIによる文字認識を活用して、スキャンされた文書や画像からのデータ抽出を自動化することを目的としています。
+
+主な特徴：
+
+ダークモード / ライトモード対応
+
+英語 / 日本語の多言語対応
+
+AIによる高精度OCR処理
+
+シンプルで使いやすいインターフェース
+
+--------------------------------------------------------------------------------------------------------------
+
+✨ Features
+
+✔ Upload images containing text
+✔ AI-powered OCR text extraction
+✔ Support for printed and handwritten text
+✔ Canvas-based image editing using Fabric.js
+✔ Dark Mode / Light Mode UI
+✔ English / Japanese language switching
+✔ Cloud storage for uploaded files
+✔ Secure authentication with Supabase
+
+--------------------------------------------------------------------------------------------------------------
+
+🧠 Tech Stack
+Frontend
+
+React / Next.js – UI framework
+Tailwind CSS – Styling
+Fabric.js – Canvas editor
+
+Backend
+
+Next.js API Routes (or Node.js / Express)
+Supabase
+Database
+Authentication
+Storage
+
+AI Processing
+Gemini AI Flash 2.5 – OCR processing
+
+Deployment
+
+Vercel – Hosting
+Supabase – Backend services
+
+Localization
+i18next – English / Japanese translation
+
+--------------------------------------------------------------------------------------------------------------
+
+⚙️ Installation
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/ocr-ai-project.git
+
+cd ocr-ai-project
+2️⃣ Install Dependencies
+npm install
+
+or
+
+yarn install
+3️⃣ Configure Environment Variables
+
+Create a .env.local file.
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+GEMINI_API_KEY=your_gemini_api_key
+4️⃣ Run the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+http://localhost:3000
+🚀 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project is deployed using:
 
-## Learn More
+Vercel – Frontend hosting
 
-To learn more about Next.js, take a look at the following resources:
+Supabase – Backend services
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+vercel deploy
+🧪 Demo
 
-## Deploy on Vercel
+Live Demo:
+(https://ocrproject3.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Example Workflow:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1️⃣ Upload image
+2️⃣ Edit or crop using canvas editor
+3️⃣ Click Extract Text
+4️⃣ AI processes image using Gemini
+5️⃣ OCR result appears instantly
+
+--------------------------------------------------------------------------------------------------------------
+
+📁 Project Structure
+/ocr-project
+│
+├── components
+├── pages
+├── api
+├── public
+├── screenshots
+├── styles
+├── utils
+│
+├── i18n
+├── supabase
+│
+└── README.md
+
+--------------------------------------------------------------------------------------------------------------
+
+🔮 Future Improvements
+
+Multi-language OCR support
+
+PDF document OCR
+
+Handwriting accuracy improvements
+
+Export results as PDF / TXT
+
+Batch image processing
+--------------------------------------------------------------------------------------------------------------
+👩‍💻 Author
+
+Nilakshi Fernando
+
+Software Engineering Graduate
+Passionate about AI, Web Development, and Automation
